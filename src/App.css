@@ -1,5 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+/* My Styles */
+
+/* General styles and resets */
 
 * {
     box-sizing: border-box;
@@ -13,24 +36,47 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
-header {
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Header Styles */
+
+.header {
     padding: 25px;
     background: deepskyblue;
     border-bottom: 1px solid rgba(50,50,50,0.9);
     box-shadow: 0 2px 3px rgba(50,50,50,0.3);
 }
 
-header h1 {
-    color: rgba(50,50,50,0.7);
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-nav li {
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.header h1 {
+    color: rgba(250,250,250,0.9);
+}
+
+.header nav li {
     display: inline-block;
     width: 125px;
     margin: auto 10px;
 }
 
-nav li a {
+.header nav li a {
+    color: rgba(150,150,150,0.9);
     display: block;
     width: 100%;
     height: 100%;
@@ -42,25 +88,18 @@ nav li a {
     transition: ease-out 0.4s;
 }
 
-nav li a:hover {
+.header nav li a:hover {
     color: black;
     box-shadow: 5px 5px 5px rgba(50,50,50,0.3);
 }
 
-nav li a:active {
+.header nav li a:active {
     background: rgb(19, 33, 236);
     color: rgba(255,255,255,0.7);
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
 
-a {
-    text-decoration: none;
-}
-
+/* Form styles */
 
 form {
     width: 290px;
@@ -103,7 +142,9 @@ form:hover button {
 }
 
 
-section li {
+/* Section styles */
+
+.section li {
     width: 290px;
     margin: auto;
     border-radius: 10px;
@@ -111,11 +152,11 @@ section li {
     transition: ease-out 0.6s;
 }
 
-section li:hover img {
+.section li:hover img {
     transform: scale(1.1);
 }
 
-section img {
+.section img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -123,7 +164,9 @@ section img {
 }
 
 
-footer {
+/* Footer styles */
+
+.footer {
     color: rgba(255,255,255,0.9);
     padding: 25px;
     background: rgba(50,50,50,0.7);
