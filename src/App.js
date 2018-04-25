@@ -6,10 +6,12 @@ import {
 
 import Header from './components/Header';
 import Section from './components/Section';
+import Footer from './components/Footer';
 
 import './css/App.css';
 
 import comingSoon from './img/comingsoon.jpg';
+import yinyang_thinker from './img/yinyang_thinker.png';
 import logo from './img/logo.svg';
 
 class App extends Component {
@@ -24,6 +26,7 @@ class App extends Component {
           <Route path="/waterfalls" render={ () => <Section heading="Waterfalls" imgSrc={comingSoon} /> } />
           <Route path="/rainbows" render={ () => <Section heading="Rainbows" imgSrc={comingSoon} /> } /> 
 
+          <Footer bonusImage={yinyang_thinker} />
         </div>
       </BrowserRouter>
     );
