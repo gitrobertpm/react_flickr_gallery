@@ -89,8 +89,8 @@ a {
 }
 
 .header nav li a:hover {
-    color: black;
-    box-shadow: 5px 5px 5px rgba(50,50,50,0.3);
+    color: deepskyblue;
+    box-shadow: 7px 7px 7px rgba(50,50,50,0.4);
 }
 
 /* .header nav li a:active {
@@ -99,7 +99,7 @@ a {
 } */
 
 .header .active {
-    background: rgb(19, 33, 236);
+    background: rgb(6, 13, 109);
     color: rgba(255,255,255,0.7);
 }
 
