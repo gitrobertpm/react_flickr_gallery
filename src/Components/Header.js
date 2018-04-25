@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   return (
@@ -8,10 +9,10 @@ function Header(props) {
 
       <nav className="header-nav">
           <ul>
-              <li><a href="">Search</a></li>
-              <li><a href="">Beaches</a></li>
-              <li><a href="">Waterfalls</a></li>
-              <li><a href="">Rainbows</a></li>
+              <li><Link to="/">Search</Link></li>
+              <li><Link to="/beaches">Beaches</Link></li>
+              <li><Link to="/waterfalls">Waterfalls</Link></li>
+              <li><Link to="rainbows">Rainbows</Link></li>
           </ul>
       </nav>   
     </header>

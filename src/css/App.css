@@ -133,7 +133,7 @@ button {
     border-top-width: 0;
     border-bottom-width: 2px;
     border-right-width: 2px;
-    border-left-color: rgba(255,255,255,0.7);
+    border-left-color: rgba(155,155,155,0.7);
     transition: ease-out 0.4s;
 }
 
