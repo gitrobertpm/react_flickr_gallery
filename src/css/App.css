@@ -93,7 +93,12 @@ a {
     box-shadow: 5px 5px 5px rgba(50,50,50,0.3);
 }
 
-.header nav li a:active {
+/* .header nav li a:active {
+    background: rgb(19, 33, 236);
+    color: rgba(255,255,255,0.7);
+} */
+
+.header .active {
     background: rgb(19, 33, 236);
     color: rgba(255,255,255,0.7);
 }
