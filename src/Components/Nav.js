@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = (props, {match}) => {
   let mainTopicLinks;
-  console.log({match});
   // dynamically produce nav links based on state.topics in App.js
   if (props.linkNames) {
     mainTopicLinks = props.linkNames.map((linkName, i) => {
