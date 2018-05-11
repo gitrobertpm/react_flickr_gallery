@@ -31,6 +31,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    color: rgba(50,50,50,0.9);
     margin: 0;
     text-align: center;
     font-family: 'Nunito', sans-serif;
@@ -50,57 +51,113 @@ a {
 
 .header {
     padding: 25px;
-    background: deepskyblue;
     border-bottom: 1px solid rgba(50,50,50,0.9);
     box-shadow: 0 2px 3px rgba(50,50,50,0.3);
+    background: rgb(100,249,255); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(100,249,255,1) 1%, rgba(0,191,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(100,249,255,1) 1%,rgba(0,191,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(100,249,255,1) 1%,rgba(0,191,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64f9ff', endColorstr='#00bfff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+  filter: saturate(1) drop-shadow(1px 1px 2px rgba(100,100,100,0.5));
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(90deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(270deg);}
+  100% { transform: rotate(360deg);}
 }
 
 .header h1 {
     color: rgba(250,250,250,0.9);
+    text-shadow: 1px 1px 1px rgba(50,50,50,0.7)
+}
+
+.header nav {
+    width: 450px;
+    margin: auto;
+    padding-right: 145px;
+    transition: ease-out 0.4s;
 }
 
 .header nav li {
     display: inline-block;
     width: 125px;
     margin: auto 10px;
+    background: white;
+    border-radius: 5px;
+    transition: ease-out 0.4s;
 }
 
 .header nav li a {
-    color: rgba(150,150,150,0.9);
+    color: rgba(255,255,255,0.9);
     display: block;
     width: 100%;
     height: 100%;
     padding: 8px 10px;
-    background: rgba(255,255,255,1);
+    background: rgba(0,0,0,1);
+    border: 1px solid black;
     border-radius: 4px;
-    border: 1px solid rgba(50,50,50,0.5);
-    box-shadow: 2px 2px 3px rgba(50,50,50,0.5);
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.9);
+    text-shadow: none;
     transition: ease-out 0.4s;
 }
 
-.header nav li a:hover {
-    color: deepskyblue;
-    box-shadow: 7px 7px 7px rgba(50,50,50,0.4);
+.header .dropdown-navmenu {
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-block;
+    height: 41px;
+    padding: 8px 10px;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,1);
+    border-radius: 4px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.9);
+    text-shadow: none;
+    transition: ease-out 0.4s;
 }
 
-/* .header nav li a:active {
-    background: rgb(19, 33, 236);
-    color: rgba(255,255,255,0.7);
-} */
+.header .dropdown-navlink {
+    margin: 12px auto;
+    width: 100px;
+    transition: ease-out 0.4s;
+    border: 1px solid rgba(0,191,255,1);
+    box-shadow: none;
+}
+
+.header .dropdown-navmenu:hover {
+    height: 230px;
+    color: rgba(0,191,255,1);
+    background: white;
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 7px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    
+}
+
+.header nav li a:hover {
+    color: rgba(0,191,255,1);
+    background: white;
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 7px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    
+}
 
 .header .active {
-    background: rgb(6, 13, 109);
-    color: rgba(255,255,255,0.7);
+    color: rgba(0,191,255,1);
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 5px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    
+}
+
+.header .activeToggle {
+    color: rgba(0,191,255,1);
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 7px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    
 }
 
 
@@ -112,6 +169,7 @@ form {
 }
 
 input {
+    outline: none;
     display: inline-block;
     width: 250px;
     height: 40px;
@@ -130,6 +188,7 @@ form:hover input {
 }
 
 button {
+    cursor: pointer;
     display: inline-block;
     height: 40px;
     margin-left: -5px;
@@ -147,27 +206,62 @@ form:hover button {
 }
 
 
-/* Section styles */
+/* gallery styles */
 
-.section li {
-    width: 290px;
+.gallery {
+    width: 100%;
+    max-width: 1400px;
     margin: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: ease-out 0.6s;
 }
 
-.section li:hover img {
+.gallery h2 {
+    margin: 20px auto;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 290px;
+    height: 240px;
+    margin: 10px;
+    background: rgba(0,0,0,1);
+    border: 3px solid rgba(50,50,50,0.9);
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.5);
+    overflow: hidden;
+    transition: ease-out 0.4s;
+}
+
+.gallery li:hover {
+    box-shadow: 7px 7px 7px rgba(50,50,50,0.5)
+}
+
+.gallery li:hover img {
     transform: scale(1.1);
 }
 
-.section img {
+.gallery img {
+    display: inline-block;;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    vertical-align: middle;
     transition: ease-out 0.6s;
 }
 
+.loadingClass {
+    animation: 'fadeOut 0.4s ease-out 0.1s forwards';
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
+#comingSoon {
+    border: none;
+    height: 290px;
+    box-shadow: none;
+    border-radius: 4px;
+}
 
 /* Footer styles */
 
@@ -175,9 +269,13 @@ form:hover button {
     color: rgba(255,255,255,0.9);
     padding: 25px;
     margin-top: 100px;
-    background: rgba(50,50,50,0.7);
     border-top: 1px solid rgba(50,50,50,0.9);
     box-shadow: 0 2px 3px rgba(50,50,50,0.3) inset;
+    background: rgb(150,150,150); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(150,150,150,1) 1%, rgba(50,50,50,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(150,150,150,1) 1%,rgba(50,50,50,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(150,150,150,1) 1%,rgba(50,50,50,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#323232',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .footer p {
