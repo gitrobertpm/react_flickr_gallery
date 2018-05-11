@@ -20,7 +20,7 @@ const Nav = (props, {match}) => {
     <nav className="header-nav">
         <ul onClick={props.handleNavActiveStates}>
             <li><NavLink exact to="/" id="nav-home">Home</NavLink></li>
-            <li><NavLink to="/search" id="nav-search">Search</NavLink></li>
+            <li><NavLink to="/Search" id="nav-search">Search</NavLink></li>
             <li className="dropdown-navmenu" id="nav-dropdown">Cool Stuff
               <ul className="dropdown-list">
                 {mainTopicLinks}

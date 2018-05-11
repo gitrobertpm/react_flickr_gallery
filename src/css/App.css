@@ -267,18 +267,23 @@ form:hover button {
 }
 
 #searchSpan, #coolStuffSpan {
+    cursor: default;
     font-weight: 400;
+    font-size: 0.8em;
     color: white;
     background: black;
-    padding: 2px 9px;
+    margin: auto 3px;
+    padding: 3px 8px;
     border-radius: 3px;
     border: 2px solid rgba(8,12,255,0.7);
+    box-shadow: 3px 3px 5px rgba(50,50,50,0.9);
     transition: 0.4s;
 }
 
 #searchSpan:hover, #coolStuffSpan:hover {
     color: rgba(0,102,255,0.959);
     text-shadow: 1px 1px 0px rgba(8,12,255,0.7);
+    box-shadow: 5px 5px 5px rgba(50,50,50,0.4);
 }
 
 

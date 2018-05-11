@@ -98,7 +98,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={ () => <Home heading="Home" /> } />
             
-            <Route path="/search" render={ () => 
+            <Route path="/Search" render={ () => 
               <div>
                 <Form getImages={this.getImages} loading={this.state.loading} />
                 <Gallery heading="Search" getImages={this.getImages} data={this.state.searchImgs} loading={this.state.loading} subject={this.state.searchTopic} />
