@@ -135,28 +135,30 @@ a {
 
 .header .dropdown-navmenu:hover {
     height: 230px;
-    color: rgba(0,191,255,1);
+    color: rgba(0,102,255,0.959);
     background: white;
-    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 7px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
     
 }
 
 .header nav li a:hover {
-    color: rgba(0,191,255,1);
+    color: rgba(0,102,255,0.959);
     background: white;
-    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 7px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
     
 }
 
 .header .active {
-    color: rgba(0,191,255,1);
-    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 5px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    color: rgba(0,102,255,0.959);
+    text-shadow: 1px 1px 0px rgba(8,12,255,0.7);
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
     
 }
 
 .header .activeToggle {
-    color: rgba(0,191,255,1);
-    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 3px 3px 7px rgba(0,191,255,0.7) inset, -3px -3px 7px rgba(0,191,255,0.7) inset;
+    color: rgba(0,102,255,0.959);
+    text-shadow: 1px 1px 0px rgba(8,12,255,0.7);
+    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
     
 }
 
