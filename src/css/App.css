@@ -104,6 +104,7 @@ a {
     background: rgba(0,0,0,1);
     border: 1px solid black;
     border-radius: 4px;
+    border: 2px solid rgba(8,12,255,0.7);
     box-shadow: 3px 3px 5px rgba(50,50,50,0.9);
     text-shadow: none;
     transition: ease-out 0.4s;
@@ -114,12 +115,12 @@ a {
     overflow: hidden;
     cursor: pointer;
     display: inline-block;
-    height: 41px;
-    padding: 8px 10px;
+    height: 43px;
+    padding: 8px 8px;
     color: rgba(255,255,255,0.9);
     background: rgba(0,0,0,1);
     border-radius: 4px;
-    border: 1px solid black;
+    border: 2px solid rgba(8,12,255,0.7);
     box-shadow: 3px 3px 5px rgba(50,50,50,0.9);
     text-shadow: none;
     transition: ease-out 0.4s;
@@ -127,24 +128,24 @@ a {
 
 .header .dropdown-navlink {
     margin: 12px auto;
-    width: 100px;
+    width: 105px;
     transition: ease-out 0.4s;
     border: 1px solid rgba(0,191,255,1);
     box-shadow: none;
 }
 
 .header .dropdown-navmenu:hover {
-    height: 230px;
+    height: 250px;
     color: rgba(0,102,255,0.959);
     background: white;
-    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
+    box-shadow: 7px 7px 5px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
     
 }
 
 .header nav li a:hover {
     color: rgba(0,102,255,0.959);
     background: white;
-    box-shadow: 5px 5px 7px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
+    box-shadow: 7px 7px 5px rgba(50,50,50,0.4), 2px 2px 9px rgba(0,102,255,0.959) inset, -2px -2px 9px rgba(0,102,255,0.959) inset;
     
 }
 
@@ -264,6 +265,22 @@ form:hover button {
     box-shadow: none;
     border-radius: 4px;
 }
+
+#searchSpan, #coolStuffSpan {
+    font-weight: 400;
+    color: white;
+    background: black;
+    padding: 2px 9px;
+    border-radius: 3px;
+    border: 2px solid rgba(8,12,255,0.7);
+    transition: 0.4s;
+}
+
+#searchSpan:hover, #coolStuffSpan:hover {
+    color: rgba(0,102,255,0.959);
+    text-shadow: 1px 1px 0px rgba(8,12,255,0.7);
+}
+
 
 /* Footer styles */
 
