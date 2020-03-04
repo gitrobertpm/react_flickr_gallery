@@ -10,12 +10,12 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Header from './components/Header';
-import Home from './components/Home';
-import Gallery from './components/Gallery';
-import Form from './components/Form';
-import Footer from './components/Footer';
-import NotFound from './components/NotFound';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import Gallery from './Components/Gallery';
+import Form from './Components/Form';
+import Footer from './Components/Footer';
+import NotFound from './Components/NotFound';
 
 import yinyang_thinker from './img/yinyang_thinker.png';
 import logo from './img/logo.svg';
