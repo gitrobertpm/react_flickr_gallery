@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react_flickr_gallery/static/css/main.d2ee30ee.chunk.css",
+    "main.js": "/react_flickr_gallery/static/js/main.a6cabdbf.chunk.js",
+    "main.js.map": "/react_flickr_gallery/static/js/main.a6cabdbf.chunk.js.map",
+    "runtime-main.js": "/react_flickr_gallery/static/js/runtime-main.17e1219a.js",
+    "runtime-main.js.map": "/react_flickr_gallery/static/js/runtime-main.17e1219a.js.map",
+    "static/js/2.b03366ba.chunk.js": "/react_flickr_gallery/static/js/2.b03366ba.chunk.js",
+    "static/js/2.b03366ba.chunk.js.map": "/react_flickr_gallery/static/js/2.b03366ba.chunk.js.map",
+    "index.html": "/react_flickr_gallery/index.html",
+    "precache-manifest.56bb9aa2a48671cb266b1f2b99656a36.js": "/react_flickr_gallery/precache-manifest.56bb9aa2a48671cb266b1f2b99656a36.js",
+    "service-worker.js": "/react_flickr_gallery/service-worker.js",
+    "static/css/main.d2ee30ee.chunk.css.map": "/react_flickr_gallery/static/css/main.d2ee30ee.chunk.css.map",
+    "static/js/2.b03366ba.chunk.js.LICENSE.txt": "/react_flickr_gallery/static/js/2.b03366ba.chunk.js.LICENSE.txt",
+    "static/media/comingsoon.jpg": "/react_flickr_gallery/static/media/comingsoon.99a332ec.jpg",
+    "static/media/logo.svg": "/react_flickr_gallery/static/media/logo.ee7cd8ed.svg",
+    "static/media/yinyang_thinker.png": "/react_flickr_gallery/static/media/yinyang_thinker.dc99e790.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17e1219a.js",
+    "static/js/2.b03366ba.chunk.js",
+    "static/css/main.d2ee30ee.chunk.css",
+    "static/js/main.a6cabdbf.chunk.js"
+  ]
+}
