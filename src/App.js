@@ -5,7 +5,7 @@ import './css/App.css';
 import axios from 'axios';
 import apiKey from './config';
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -89,7 +89,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter basename="/react_flickr_gallery">
       
         <div>
         
@@ -98,7 +98,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" render={ () => <Home heading="Home" /> } />
             
-            <Route path="/Search" render={ () => 
+            <Route path="/search" render={ () => 
               <div>
                 <Form getImages={this.getImages} loading={this.state.loading} />
                 <Gallery heading="Search" getImages={this.getImages} data={this.state.searchImgs} loading={this.state.loading} subject={this.state.searchTopic} />
@@ -122,7 +122,7 @@ class App extends Component {
 
           <Footer bonusImage={yinyang_thinker} />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

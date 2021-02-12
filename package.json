@@ -2,14 +2,19 @@
   "name": "react-flickr-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gitrobertpm.github.io/react_flickr_gallery/",
   "dependencies": {
-    "axios": "^0.18.1",
-    "react": "^16.3.2",
+    "acorn": "^7.1.1",
+    "axios": "^0.21.1",
+    "gh-pages": "^2.2.0",
+    "react": "^17.0.1",
     "react-dom": "^16.13.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "^3.4.0"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^4.0.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
