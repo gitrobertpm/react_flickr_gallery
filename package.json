@@ -5,7 +5,7 @@
   "homepage": "https://gitrobertpm.github.io/react_flickr_gallery/",
   "dependencies": {
     "acorn": "^7.1.1",
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "gh-pages": "^2.2.0",
     "react": "^17.0.1",
     "react-dom": "^16.13.0",
